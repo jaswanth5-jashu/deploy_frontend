@@ -16,34 +16,6 @@ function Mous() {
 
   return (
      <>
-      {/* SEO for MoUs Page */}
-      <Helmet>
-        <title>MoUs | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Explore Memorandums of Understanding and strategic partnerships of Akhil's Cloud Technology Platform LLP."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil MoUs, Akhil partnerships, strategic alliances Akhil"
-        />
-
-        <meta
-          property="og:title"
-          content="MoUs | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Strategic alliances and partnerships driving innovation at Akhil's Cloud Technology Platform LLP."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/mous"
-        />
-      </Helmet>
-
     <div className="mous-page">
       <section className="hero">
         <span className="hero-badge">
