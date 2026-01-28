@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "../../css/services/ServiceGrid.css";
+import "../../css/Services/ServiceGrid.css";
 
 function ServiceGrid() {
   const [activeModal, setActiveModal] = useState(null);
