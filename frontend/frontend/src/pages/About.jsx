@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import "../css/about/AboutGlobal.css"; 
+import "../css/About/AboutGlobal.css"; 
 
 import AboutHero from "../components/About/AboutHero";
 import AboutStory from "../components/About/AboutStory";
