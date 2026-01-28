@@ -3,6 +3,8 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "../css/cpus.css";
 
+const API_BASE = import.meta.env.VITE_API_URL;
+
 const Cpus = () => {
   // 🔹 Input Refs
   const fullNameRef = useRef();
@@ -34,9 +36,9 @@ const Cpus = () => {
     };
 
     try {
-      const response = await axios.post(
-        "http://127.0.0.1:8000/api/inquiry/",
-        formData
+      const response =await axios.post(
+          `${API_BASE}/api/inquiry/`,
+          formData
       );
 
       if (response.status === 201 || response.status === 200) {
