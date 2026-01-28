@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "../css/give.css";
-import { Helmet } from "react-helmet-async";
 import { fetchWorkshops, fetchGallery } from "../services/giveApi.js";
 import AnimatedNumber from "../components/AnimatedNumbers.jsx";
 
@@ -40,35 +39,6 @@ function GiveBackPage() {
       : workshops.filter((w) => w.status === filter);
 
   return (
-
-     <>
-      {/* SEO for Give / CSR Page */}
-      <Helmet>
-        <title>Give Back | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Discover how Akhil's Cloud Technology Platform LLP gives back to the community through bootcamps, workshops, and educational initiatives."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil CSR, Akhil give back, community initiatives Akhil, Akhil bootcamps"
-        />
-
-        <meta
-          property="og:title"
-          content="Give Back | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Community programs, workshops, and social initiatives by Akhil's Cloud Technology Platform LLP."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/give"
-        />
-      </Helmet>
 
     <div className="give-back">
       {/*COMMUNITY */}
@@ -256,7 +226,6 @@ function GiveBackPage() {
         </div>
       </section>
     </div>
-    </>
   );
 }
 

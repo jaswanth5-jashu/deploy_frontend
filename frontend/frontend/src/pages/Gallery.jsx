@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "../css/gallery.css";
-import { Helmet } from "react-helmet-async";
 
 function Gallery() {
   const [images, setImages] = useState([]);
@@ -32,34 +31,6 @@ function Gallery() {
       : images.filter((img) => img.category === activeCategory);
 
   return (
-    <>
-      {/* SEO for Gallery Page */}
-      <Helmet>
-        <title>Gallery | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Browse the photo gallery of Akhil's Cloud Technology Platform LLP showcasing events, activities, achievements, and workplace culture."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil gallery, Akhil events, Akhil activities, Akhil workplace"
-        />
-
-        <meta
-          property="og:title"
-          content="Gallery | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Explore moments and milestones from Akhil's Cloud Technology Platform LLP."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/gallery"
-        />
-      </Helmet>
 
     <div className="gallery-page">
       {/*HERO */}
@@ -131,7 +102,6 @@ function Gallery() {
         </div>
       )}
     </div>
-    </>
   );
 }
 

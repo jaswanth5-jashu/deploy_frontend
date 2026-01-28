@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "../css/mous.css";
 import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import { getMousApi } from "../services/mousApi.js";
 import { runMouScript } from "../js/mousScript.js";
 import AnimatedNumber from "../components/AnimatedNumbers.jsx";

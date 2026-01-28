@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import "../css/pipeline.css";
-import { Helmet } from "react-helmet-async";
 import { getProjects } from "../services/pipelineApi.js";
 import HillGraph from "../components/HillGraph.jsx"; 
 
@@ -44,35 +43,6 @@ function Pipeline() {
   );
 
   return (
-
-    <>
-      {/* SEO for Pipeline Page */}
-      <Helmet>
-        <title>Project Pipeline | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Explore active, upcoming, and completed projects in the pipeline of Akhil's Cloud Technology Platform LLP."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil project pipeline, Akhil ongoing projects, cloud technology projects"
-        />
-
-        <meta
-          property="og:title"
-          content="Project Pipeline | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Track ongoing and upcoming technology initiatives by Akhil's Cloud Technology Platform LLP."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/pipeline"
-        />
-      </Helmet>
     
     <div className="pipeline-page">
 
@@ -98,7 +68,6 @@ function Pipeline() {
       ))}
 
     </div>
-    </>
   );
 }
 

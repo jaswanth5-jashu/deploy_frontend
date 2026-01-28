@@ -1,6 +1,5 @@
 import React, { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Helmet } from "react-helmet-async";
 import axios from "axios";
 import "../css/cpus.css";
 
@@ -71,36 +70,6 @@ const Cpus = () => {
 
   return (
     <>
-     <>
-      {/* SEO for CPUS Page */}
-      <Helmet>
-        <title>CPUs | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Explore next-generation CPUs and custom processor configurations by Akhil's Cloud Technology Platform LLP."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil CPUs, CPU configurations Akhil, processors Akhil, enterprise CPUs"
-        />
-
-        <meta
-          property="og:title"
-          content="CPUs | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Next-gen processors and custom CPU solutions from Akhil's Cloud Technology Platform LLP."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/cpus"
-        />
-      </Helmet>
-
-      {/* HERO SECTION */}
       <section className="sos-hero">
         <span className="sos-hero-badge">
           <span className="sos-badge-icon">
@@ -255,7 +224,6 @@ const Cpus = () => {
           Contact Sales <i className="bi bi-arrow-right"></i>
         </NavLink>
       </section>
-    </>
     </>
   );
 };

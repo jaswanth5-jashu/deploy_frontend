@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../css/carrer.css";
-import { Helmet } from "react-helmet-async";
 import { validateCareerForm } from "../utils/careerValidation";
 import { createApplication } from "../services/careerApi.js";
 
@@ -35,35 +34,6 @@ function Career() {
   };
 
   return (
-        <>
-      {/* SEO for Careers Page */}
-      <Helmet>
-        <title>Careers | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Explore career opportunities at Akhil's Cloud Technology Platform LLP. Join our team and build a future in cloud and technology."
-        />
-
-        <meta
-          name="keywords"
-          content="Akhil careers, jobs at Akhil cloud, cloud jobs Akhil, DevOps jobs Akhil"
-        />
-
-        <meta
-          property="og:title"
-          content="Careers | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Join Akhil's Cloud Technology Platform LLP and shape the future of technology."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/career"
-        />
-      </Helmet>
-
     <div className="careers-page">
       {/* HERO */}
       <section className="careers-hero">
@@ -239,7 +209,6 @@ function Career() {
         </form>
       </section>
     </div>
-    </>
   );
 }
 

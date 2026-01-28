@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../css/contact.css";
-import { Helmet } from "react-helmet-async";
 import { sendContactMessage } from "../services/contactApi";
 import { validateContactForm } from "../utils/contactvalidate.js"; 
 
@@ -52,35 +51,6 @@ function Contact() {
   };
 
   return (
-        <>
-      {/* SEO for Contact Page */}
-      <Helmet>
-        <title>Contact Us | Akhil's Cloud Technology Platform LLP</title>
-
-        <meta
-          name="description"
-          content="Contact Akhil's Cloud Technology Platform LLP for cloud solutions, partnerships, and business inquiries. Get in touch with our team today."
-        />
-
-        <meta
-          name="keywords"
-          content="Contact Akhil cloud, Akhil support, Akhil cloud contact, Akhil technology platform contact"
-        />
-
-        <meta
-          property="og:title"
-          content="Contact Us | Akhil's Cloud Technology Platform LLP"
-        />
-        <meta
-          property="og:description"
-          content="Get in touch with Akhil's Cloud Technology Platform LLP. We're here to help with your cloud and technology needs."
-        />
-        <meta
-          property="og:url"
-          content="https://www.akhilscloud.com/contact"
-        />
-      </Helmet>
-
     <div className="cps">
     <div className="cont-page">
       {/* HERO SECTION */}
@@ -217,7 +187,6 @@ function Contact() {
       </div>
     </div>
     </div>
-    </>
   );
 }
 
