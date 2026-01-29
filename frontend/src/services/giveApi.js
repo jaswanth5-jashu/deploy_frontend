@@ -1,4 +1,4 @@
-const BASE_URL = `${import.meta.env.VITE_API_URL}/api/giveback/`;
+const BASE_URL = 'https://deploye-test-backend.onrender.com/api/giveback';
 
 export const fetchGiveBackData = async () => {
   const res = await fetch(BASE_URL);

@@ -9,7 +9,7 @@ function Gallery() {
 
   // 🔹 Fetch gallery images from backend
   useEffect(() => {
-    fetch("http://127.0.0.1:8000/api/gallery/")
+    fetch("https://deploye-test-backend.onrender.com/api/gallery/")
       .then((res) => res.json())
       .then((data) => {
         setImages(data);

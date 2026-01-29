@@ -1,9 +1,9 @@
 // services/mousApi.js
 
-const BASE_URL = "http://127.0.0.1:8000";
+const BASE_URL = "https://deploye-test-backend.onrender.com/api/";
 
 export const getMousApi = async () => {
-  const res = await fetch(`${BASE_URL}/api/mous/`);
+  const res = await fetch(`${BASE_URL}mous/`);
   if (!res.ok) {
     throw new Error("Failed to fetch MOUs");
   }

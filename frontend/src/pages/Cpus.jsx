@@ -3,7 +3,6 @@ import { NavLink } from "react-router-dom";
 import axios from "axios";
 import "../css/cpus.css";
 
-const API_BASE = import.meta.env.VITE_API_URL;
 
 const Cpus = () => {
   // 🔹 Input Refs
@@ -37,7 +36,7 @@ const Cpus = () => {
 
     try {
       const response =await axios.post(
-          `${API_BASE}/api/inquiry/`,
+         'https://deploye-test-backend.onrender.com/api/contact/inquiry/',
           formData
       );
 
